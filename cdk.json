@@ -12,6 +12,16 @@
     "@aws-cdk/aws-ecs-patterns:removeDefaultDesiredCount": true,
     "@aws-cdk/aws-rds:lowercaseDbIdentifier": true,
     "@aws-cdk/aws-efs:defaultEncryptionAtRest": true,
-    "@aws-cdk/aws-lambda:recognizeVersionProps": true
+    "@aws-cdk/aws-lambda:recognizeVersionProps": true,
+    "alb_arn": "arn:aws:elasticloadbalancing:ap-northeast-1:656169322665:loadbalancer/app/AlbVp-ALBAE-VZB8MLFI4JQU/f5fa54385d3614f8",
+    "alb_http_listener_arn": "arn:aws:elasticloadbalancing:ap-northeast-1:656169322665:listener/app/AlbVp-ALBAE-VZB8MLFI4JQU/f5fa54385d3614f8/0fd60e23d7b28dce",
+    "alb_https_listener_arn": "arn:aws:elasticloadbalancing:ap-northeast-1:656169322665:listener/app/AlbVp-ALBAE-VZB8MLFI4JQU/f5fa54385d3614f8/fe3c9a805849dc53",
+    "vpc_id": "vpc-073ec7be458bac780",
+    "vpc_name": "AlbVpcStack/VPC",
+    "lb_securitygroupid_exportname": "v1-securitygroupid",
+    "domain": "figmentresearch.com",
+    "subdomain": "c9",
+    "cloud9_instance_id": "i-0826d32d642c52270",
+    "cloud9_instance_securitygroup_id": "sg-08cd7518e4b2bbc4f"
   }
 }

@@ -1,0 +1,96 @@
+{
+  "vpc-provider:account=656169322665:filter.tag:Name=AlbVpcStack/VPC:filter.vpc-id=vpc-073ec7be458bac780:region=ap-northeast-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-073ec7be458bac780",
+    "vpcCidrBlock": "10.0.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-00ba7ebcd4d27f93b",
+            "cidr": "10.0.0.0/24",
+            "availabilityZone": "ap-northeast-1b",
+            "routeTableId": "rtb-0c657150e7f83705d"
+          },
+          {
+            "subnetId": "subnet-056722140cd3227fd",
+            "cidr": "10.0.1.0/24",
+            "availabilityZone": "ap-northeast-1c",
+            "routeTableId": "rtb-0893ad30f7c33aede"
+          },
+          {
+            "subnetId": "subnet-0f4ee8bed864255cf",
+            "cidr": "10.0.2.0/24",
+            "availabilityZone": "ap-northeast-1d",
+            "routeTableId": "rtb-096ce6580cab3caef"
+          }
+        ]
+      }
+    ]
+  },
+  "load-balancer:account=656169322665:loadBalancerArn=arn$:aws:elasticloadbalancing:ap-northeast-1:656169322665:loadbalancer/app/AlbVp-ALBAE-VZB8MLFI4JQU/f5fa54385d3614f8:loadBalancerType=application:region=ap-northeast-1": {
+    "loadBalancerArn": "arn:aws:elasticloadbalancing:ap-northeast-1:656169322665:loadbalancer/app/AlbVp-ALBAE-VZB8MLFI4JQU/f5fa54385d3614f8",
+    "loadBalancerCanonicalHostedZoneId": "Z14GRHDCWA56QT",
+    "loadBalancerDnsName": "AlbVp-ALBAE-VZB8MLFI4JQU-210118047.ap-northeast-1.elb.amazonaws.com",
+    "vpcId": "vpc-073ec7be458bac780",
+    "securityGroupIds": [
+      "sg-0771668a1dc71abc1"
+    ],
+    "ipAddressType": "ipv4"
+  },
+  "load-balancer-listener:account=656169322665:listenerArn=arn$:aws:elasticloadbalancing:ap-northeast-1:656169322665:listener/app/AlbVp-ALBAE-VZB8MLFI4JQU/f5fa54385d3614f8/fe3c9a805849dc53:loadBalancerType=application:region=ap-northeast-1": {
+    "listenerArn": "arn:aws:elasticloadbalancing:ap-northeast-1:656169322665:listener/app/AlbVp-ALBAE-VZB8MLFI4JQU/f5fa54385d3614f8/fe3c9a805849dc53",
+    "listenerPort": 443,
+    "securityGroupIds": [
+      "sg-0771668a1dc71abc1"
+    ]
+  },
+  "hosted-zone:account=656169322665:domainName=figmentresearch.com:region=ap-northeast-1": {
+    "Id": "/hostedzone/Z126AE9J3I94QV",
+    "Name": "figmentresearch.com."
+  },
+  "vpc-provider:account=656169322665:filter.vpc-id=vpc-073ec7be458bac780:region=ap-northeast-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-073ec7be458bac780",
+    "vpcCidrBlock": "10.0.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-00ba7ebcd4d27f93b",
+            "cidr": "10.0.0.0/24",
+            "availabilityZone": "ap-northeast-1b",
+            "routeTableId": "rtb-0c657150e7f83705d"
+          },
+          {
+            "subnetId": "subnet-056722140cd3227fd",
+            "cidr": "10.0.1.0/24",
+            "availabilityZone": "ap-northeast-1c",
+            "routeTableId": "rtb-0893ad30f7c33aede"
+          },
+          {
+            "subnetId": "subnet-0f4ee8bed864255cf",
+            "cidr": "10.0.2.0/24",
+            "availabilityZone": "ap-northeast-1d",
+            "routeTableId": "rtb-096ce6580cab3caef"
+          }
+        ]
+      }
+    ]
+  },
+  "security-group:account=656169322665:region=ap-northeast-1:securityGroupId=sg-0771668a1dc71abc1": {
+    "securityGroupId": "sg-0771668a1dc71abc1",
+    "allowAllOutbound": true
+  },
+  "load-balancer-listener:account=656169322665:listenerArn=arn$:aws:elasticloadbalancing:ap-northeast-1:656169322665:listener/app/AlbVp-ALBAE-VZB8MLFI4JQU/f5fa54385d3614f8/0fd60e23d7b28dce:loadBalancerType=application:region=ap-northeast-1": {
+    "listenerArn": "arn:aws:elasticloadbalancing:ap-northeast-1:656169322665:listener/app/AlbVp-ALBAE-VZB8MLFI4JQU/f5fa54385d3614f8/0fd60e23d7b28dce",
+    "listenerPort": 80,
+    "securityGroupIds": [
+      "sg-0771668a1dc71abc1"
+    ]
+  }
+}
