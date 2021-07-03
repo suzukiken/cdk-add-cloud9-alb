@@ -20,7 +20,8 @@
     "vpc_name": "AlbVpcStack/VPC",
     "lb_securitygroupid_exportname": "v1-securitygroupid",
     "domain": "figmentresearch.com",
-    "subdomain": "c9",
+    "subdomain_c9": "c9",
+    "subdomain_c98": "c98",
     "cloud9_instance_id": "i-0826d32d642c52270",
     "cloud9_instance_securitygroup_id": "sg-08cd7518e4b2bbc4f"
   }
